@@ -183,7 +183,8 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
                     {
                         tagId = tagModel.getId();
                     }
-                    getTagService().addTagToImage(postId,tagId);
+                    getTagService().addTagToImage(tagId,postId);
+//                    getTagService().addTagToImage(postId,tagId);
                 }
                 //PostModel保存完毕
 

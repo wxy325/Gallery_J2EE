@@ -36,6 +36,8 @@ public class TagServiceImpl implements TagService<Tagmodel, Integer> {
 
     @Override
     public List<Integer> getImageTag(Integer imageId) {
+//        List aa = dao.getAllTagByPostId(imageId);
+//        System.out.println(aa.size());
         return ParseHelper.tagModelToInteger(dao.getAllTagByPostId(imageId));
     }
 

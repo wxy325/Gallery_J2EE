@@ -72,6 +72,7 @@
         <constructor-arg index="3" ref="DescriptionService" />
         <constructor-arg index="4" ref="CommentService" />
         <constructor-arg index="5" ref="RemarkService" />
+        <constructor-arg index="6" ref="TagService" />
     </bean>
 
     <bean id="SpringSingleEditDescriptionAction" class="com.wxy.action.single.SingleEditDescriptionAction" scope="prototype">

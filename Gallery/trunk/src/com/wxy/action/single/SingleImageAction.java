@@ -29,7 +29,8 @@ public class SingleImageAction extends ActionSupport implements SessionAware
                              ArtistService artistService,
                              DescriptionService descriptionService,
                              CommentService commentService,
-                             RemarkService remarkService)
+                             RemarkService remarkService,
+                             TagService tagService)
     {
         super();
         this.setImageService(imageService);
@@ -38,6 +39,7 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         this.setDescriptionService(descriptionService);
         this.setCommentService(commentService);
         this.setRemarkService(remarkService);
+        this.setTagService(tagService);
     }
 
 
@@ -143,6 +145,16 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         this.hasUser = hasUser;
     }
 
+
+    //Tag
+    private List<Tagmodel> tagList = new ArrayList<Tagmodel>();
+    public List<Tagmodel> getTagList() {
+        return tagList;
+    }
+    public void setTagList(List<Tagmodel> tagList) {
+        this.tagList = tagList;
+    }
+
     //Service
     private ImageService imageService;
     private IAccountService accountService;
@@ -150,6 +162,7 @@ public class SingleImageAction extends ActionSupport implements SessionAware
     private DescriptionService descriptionService;
     private CommentService commentService;
     private RemarkService remarkService;
+    private TagService tagService;
 
     public ImageService getImageService() {
         return imageService;
@@ -197,6 +210,14 @@ public class SingleImageAction extends ActionSupport implements SessionAware
 
     public void setRemarkService(RemarkService remarkService) {
         this.remarkService = remarkService;
+    }
+
+    public TagService getTagService() {
+        return tagService;
+    }
+
+    public void setTagService(TagService tagService) {
+        this.tagService = tagService;
     }
 
     public String execute()
@@ -303,6 +324,11 @@ public class SingleImageAction extends ActionSupport implements SessionAware
             this.setCanAddRemark(false);
         }
 
+        List<Integer> tagIds = getTagService().getImageTag(getImageId());
+        for (Integer tagId : tagIds)
+        {
+            getTagList().add((Tagmodel)getTagService().get(tagId));
+        }
         return SUCCESS;
     }
 }

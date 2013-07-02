@@ -24,7 +24,7 @@ public interface TagService <TAG extends Serializable, PK extends Serializable>
     public TAG get(PK id);
     public TAG get(String tagString);
     public List<PK> getImageTag(PK imageId);
-    public void addTagToImage(PK imageId, PK tagId);
+    public void addTagToImage(PK tagId ,PK imageId);
     public void removeTagFromImage(PK imageId, PK tagId);
 
 //    public Integer countTag(Integer id);

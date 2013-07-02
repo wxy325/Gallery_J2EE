@@ -120,6 +120,20 @@
                         </span>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        图片标签:<br/>
+
+                        <s:if test="tagList.size==0">
+                            暂无标签
+                        </s:if>
+                        <s:else>
+                            <s:iterator value="tagList" status="status">
+                                <s:property value="name" /> <br />
+                            </s:iterator>
+                        </s:else>
+                    </td>
+                </tr>
             </table>
         </div>
     </div>
