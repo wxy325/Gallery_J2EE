@@ -55,6 +55,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforComment.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforComment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforDescription.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforDescription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforPost.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforPost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforRemark.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforRemark.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/DescriptionDao.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/DescriptionDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/DescriptionService.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/DescriptionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/DescriptionServiceImpl.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/DescriptionServiceImpl.java" />
@@ -65,6 +66,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/helper/ParseHelper.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/helper/ParseHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/RemarkDao.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/RemarkDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/RemarkServiceImpl.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/RemarkServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/filter/SetCharacterEncodingFilter.java" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/filter/SetCharacterEncodingFilter.java" />
@@ -449,9 +451,9 @@
     <file path="/random_image_stream.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372703683143" ignored="false" />
     <file path="/random_image_stream.css" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372694406443" ignored="false" />
     <file path="/random_image_stream.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372694881466" ignored="false" />
-    <file path="/SingleImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372782032654" ignored="false" />
+    <file path="/SingleImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372787218680" ignored="false" />
     <file path="/single_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372777683831" ignored="false" />
-    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372784547786" ignored="false" />
+    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372787121756" ignored="false" />
     <file path="/SingleEditDescriptionAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372778880144" ignored="false" />
     <file path="/single_edit_description.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372780253470" ignored="false" />
     <file path="/single_image_error.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372735297741" ignored="false" />
@@ -460,6 +462,8 @@
     <file path="/ImageAddCommentAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372766591624" ignored="false" />
     <file path="/SingleEditDescriptionFinishAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372776212714" ignored="false" />
     <file path="/ImageAddRemarkAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372784040072" ignored="false" />
+    <file path="/DBAforRemark.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372786319441" ignored="false" />
+    <file path="/RemarkDao.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372786340874" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,7 +537,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java" line="101" class="com.wxy.action.ajax.ImageAddRemarkAction" package="com.wxy.action.ajax">
+      <breakpoint url="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" line="221" class="com.wxy.action.single.SingleImageAction" package="com.wxy.action.single">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -595,50 +599,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImageAddRemarkAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="59" selection-start="2998" selection-end="2998" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajax_struts.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="46" selection-start="475" selection-end="499" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRegisterAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserRegisterAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="21" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageAddCommentAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddCommentAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="25" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="single_image.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="29" selection-start="6844" selection-end="6844" vertical-scroll-proportion="0.42446044">
+            <state line="133" column="37" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.31654677">
               <folding />
             </state>
           </provider>
@@ -654,8 +618,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserNameCheckAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/filter/SetCharacterEncodingFilter.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserRegisterAction.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_register.jsp" />
@@ -666,10 +628,12 @@
         <option value="$PROJECT_DIR$/Gallery/trunk/resources/single/single_struts.xml" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleEditDescriptionAction.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/single/single_edit_description.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforRemark.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/RemarkDao.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
       </list>
     </option>
   </component>
@@ -907,6 +871,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1717,20 +1707,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/single/style/single_edit_description.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/DescriptionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="327" selection-end="327" vertical-scroll-proportion="0.3387471">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/single/single_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="47" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
@@ -1771,27 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforRemark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="25" selection-start="7766" selection-end="7776" vertical-scroll-proportion="0.33493975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="9" selection-start="440" selection-end="440" vertical-scroll-proportion="0.47136563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="38" selection-start="4283" selection-end="4283" vertical-scroll-proportion="0.829932">
@@ -1801,39 +1756,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddCommentAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0">
+        <state line="42" column="25" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.80046403">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/dao/RemarkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="367" selection-end="367" vertical-scroll-proportion="0.27842227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/RemarkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="26" selection-start="839" selection-end="839" vertical-scroll-proportion="0.37037036">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="510" selection-end="510" vertical-scroll-proportion="0.5475638">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="59" selection-start="2998" selection-end="2998" vertical-scroll-proportion="0.0">
+        <state line="108" column="78" selection-start="2695" selection-end="2695" vertical-scroll-proportion="0.40528634">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforRemark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="13" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.20481928">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="46" selection-start="475" selection-end="499" vertical-scroll-proportion="0.0">
+        <state line="16" column="46" selection-start="475" selection-end="499" vertical-scroll-proportion="0.52863437">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserRegisterAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="21" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0">
+        <state line="27" column="19" selection-start="581" selection-end="587" vertical-scroll-proportion="0.7359813">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="37" selection-start="3806" selection-end="3806" vertical-scroll-proportion="-4.714286">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="29" selection-start="6844" selection-end="6844" vertical-scroll-proportion="0.42446044">
+        <state line="133" column="37" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.31654677">
           <folding />
         </state>
       </provider>

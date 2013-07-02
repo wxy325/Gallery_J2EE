@@ -110,12 +110,14 @@
                 <tr>
                     <td>
                         平均得分:<br/>
+                        <span id="avg-remark">
                         <s:if test="averageRemark==null">
                             目前尚未有人评分
                         </s:if>
                         <s:else>
                             <s:property value="averageRemark" />
                         </s:else>
+                        </span>
                     </td>
                 </tr>
             </table>
@@ -124,9 +126,11 @@
 
         <div class="row">
             <div class="span9">
+
+                <div id="user-remark">
                 <s:if test="hasUser">
-                    评分：
-                    <s:if test="userReamrk==null">
+                    <s:if test="canAddRemark">
+                        评分：
                         <div class="btn-group">
                             <button class="btn" onclick="addRemark(1)">1</button>
                             <button class="btn" onclick="addRemark(2)">2</button>
@@ -139,6 +143,7 @@
                         你的评分：<s:property value="userRemark" />
                     </s:else>
                 </s:if>
+                </div>
 
             </div>
         </div>
@@ -212,8 +217,17 @@
             {
                 var fSuccess = data.success;
                 var avg = data.avgRemark;
-                alert(data);
-                alert("success:" + fSuccess + "  avg:" + avg);
+                if(fSuccess)
+                {
+                    document.getElementById("avg-remark").innerHTML = avg;
+                    document.getElementById("user-remark").innerHTML = "你的评分：" + score;
+                }
+                else
+                {
+                    alert("评分失败");
+                }
+//                alert(data);
+//                alert("success:" + fSuccess + "  avg:" + avg);
             });
 
         }

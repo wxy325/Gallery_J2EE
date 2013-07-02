@@ -119,19 +119,19 @@ public class DBAforRemark implements  RemarkDao {
 		return null;
 		return users1;
 	}
-	public Integer getAverageScore(Integer PostId)
+	public Float getAverageScore(Integer PostId)
 	{
 		Session session = HibernateSessionFactory.getSession();
 		List<Integer> users1 = session.createQuery("select remark from Remarkids b where b.pictureId= ?").setInteger(0, PostId).list();
 		int count = 0;
 		int all = 0;
-		int average = 0;
+		float average = 0;
 		for(Integer user:users1)
 		{
 			count++;
 			all = all+user.intValue();
 		}
-		average = all/count;
+		average = (float)all/count;
 		return average;
 	}
 	public static void main(String[] args) {

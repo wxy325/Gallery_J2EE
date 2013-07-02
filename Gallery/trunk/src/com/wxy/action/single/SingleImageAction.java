@@ -110,9 +110,18 @@ public class SingleImageAction extends ActionSupport implements SessionAware
     }
 
     //Avg Remark
+    private Boolean canAddRemark;
     private Float averageRemark;
-    private Integer userRemark;
+    private Integer userRemark = null;
     private Boolean hasUser;
+
+    public Boolean getCanAddRemark() {
+        return canAddRemark;
+    }
+
+    public void setCanAddRemark(Boolean canAddRemark) {
+        this.canAddRemark = canAddRemark;
+    }
 
     public Float getAverageRemark() {
         return averageRemark;
@@ -260,8 +269,9 @@ public class SingleImageAction extends ActionSupport implements SessionAware
             setHasUser(true);
             try
             {
-                Remarkids remark = (Remarkids)getRemarkService().getRemarkbyUsermodelandPostmodel(currentUser.getId(),getImageId()).get(0);
-                setUserRemark(remark.getRemark());
+//                List<Remarkids> aa = getRemarkService().getRemarkbyUsermodelandPostmodel(currentUser.getId(),getImageId());
+                Integer iRemark = (Integer)getRemarkService().getRemarkbyUsermodelandPostmodel(currentUser.getId(),getImageId()).get(0);
+                setUserRemark(iRemark);
             }
             catch (Exception e)
             {}
@@ -282,6 +292,15 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         else
         {
             this.setDescriptionEditable(false);
+        }
+
+        if (this.getHasUser() && this.getUserRemark() == null)
+        {
+            this.setCanAddRemark(true);
+        }
+        else
+        {
+            this.setCanAddRemark(false);
         }
 
         return SUCCESS;
