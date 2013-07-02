@@ -13,5 +13,11 @@
             </result>
         </action>
 
+        <action name="ImageRankStreamAction" class="SpringImageRankStreamAction">
+            <result name="success">
+                /stream/image/image_rank_stream.jsp
+            </result>
+        </action>
+
     </package>
 </struts>

@@ -26,6 +26,7 @@ public interface ImageService  <IMG extends Serializable, PK extends Serializabl
     public PK update(IMG image);
     public void remove(PK id);
     public IMG get(PK id);
+    public Integer countAll();
 
     //获取图片方法
     //position 起始位置

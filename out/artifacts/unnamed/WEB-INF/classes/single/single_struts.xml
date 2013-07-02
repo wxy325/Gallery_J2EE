@@ -14,7 +14,6 @@
             </result>
             <result name="error">
                 /single/single_image_error.jsp
-                        single_image_error.jsp
             </result>
         </action>
 

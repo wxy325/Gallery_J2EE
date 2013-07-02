@@ -90,4 +90,9 @@ public class ImageServiceImpl implements ImageService<Postmodel, Integer> {
     {
         return ParseHelper.postModelToInteger(dao.searchPostByString(keyword));
     }
+    @Override
+    public Integer countAll()
+    {
+        return dao.countAll();
+    }
 }

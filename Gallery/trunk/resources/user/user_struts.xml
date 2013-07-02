@@ -39,17 +39,23 @@
 
 
 
-        <action name="user_postmodel" class="com.wxy.action.user.UserPostModelAction">
+        <action name="user_postmodel" class="SpringUserPostModel">
             <result>
-                /user/post/user_postmodel.jsp
+                /user/user_postmodel.jsp
+            </result>
+            <result name="error" type="redirect">
+                /user/user_login.jsp
             </result>
         </action>
 
 
 
-        <action name="user_poolmodel" class="com.wxy.action.user.UserPoolAction">
+        <action name="user_poolmodel" class="SpringUserPoolModel">
             <result>
-                /user/pool/user_poolmodel.jsp
+                /user/user_poolmodel.jsp
+            </result>
+            <result name="error" type="redirect">
+                /user/user_login.jsp
             </result>
         </action>
     </package>

@@ -24,12 +24,27 @@
             <s:url action="RandomImageStreamAction" namespace="/stream/image" var="randomURL" />
 
 
+            <s:url action="ImageRankStreamAction" namespace="/stream/image" var="newURL" >
+                <s:param name="currentPage">0</s:param>
+                <s:param name="streamType">New</s:param>
+            </s:url>
+            <s:url action="ImageRankStreamAction" namespace="/stream/image" var="topHitURL" >
+                <s:param name="currentPage">0</s:param>
+                <s:param name="streamType">TopHit</s:param>
+            </s:url>
+            <s:url action="ImageRankStreamAction" namespace="/stream/image" var="topRateURL" >
+                <s:param name="currentPage">0</s:param>
+                <s:param name="streamType">TopRate</s:param>
+            </s:url>
+
+
+
             <a class="brand" href="/">Gallery</a>
             <ul class="nav pull-left">
 
                 <li id="head_index"><s:a href="%{#indexURL}">首页</s:a></li>
                 <li id="head_random"><s:a href="%{#randomURL}">随便看看</s:a></li>
-                <li id="head_new"><a href="#">最新上传</a></li>
+                <li id="head_new"><s:a href="%{#newURL}">最新上传</s:a></li>
 
                 <li id="head_top" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -37,8 +52,8 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Top Hit</a></li>
-                        <li><a href="#">Top Rate</a></li>
+                        <li><s:a href="%{#topHitURL}">Top Hit</s:a></li>
+                        <li><s:a href="%{#topRateURL}">Top Rate</s:a></li>
                         <li><a href="#">Top Tag</a></li>
                     </ul>
                 </li>
@@ -72,8 +87,11 @@
                     <s:url action="user_space" namespace="/user/space" var="spaceURL">
                         <s:param name="type">info</s:param>
                     </s:url>
-                    <s:url action="user_postmodel" namespace="/user" var="userPostmodelURL" />
+                    <s:url action="user_postmodel" namespace="/user" var="userPostmodelURL" >
+                        <s:param name="currentPage">0</s:param>
+                    </s:url>
                     <s:url action="user_poolmodel" namespace="/user" var="userPoolmodelURL" />
+
 
                     <li id="head_user" class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">

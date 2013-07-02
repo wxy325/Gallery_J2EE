@@ -20,6 +20,12 @@ public class PoolServiceImpl implements PoolService<Poolmodel, Integer> {
     }
 
     @Override
+    public Poolmodel get(Integer id)
+    {
+        return dao.get(id);
+    }
+
+    @Override
     public Integer save(Poolmodel poolmodel) {
         return dao.save(poolmodel);
     }

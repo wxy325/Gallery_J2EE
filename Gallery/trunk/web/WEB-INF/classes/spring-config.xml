@@ -51,6 +51,12 @@
     <bean id="SpringUserEditAction" class="com.wxy.action.user.UserEditAction" scope="prototype">
         <constructor-arg index="0" ref="AccountService" />
     </bean>
+    <bean id="SpringUserPostModel" class="com.wxy.action.user.UserPostModelAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+    </bean>
+    <bean id="SpringUserPoolModel" class="com.wxy.action.user.UserPoolAction" scope="prototype">
+        <constructor-arg index="0" ref="PoolService" />
+    </bean>
 
     <!-- Upload -->
     <bean id="SpringImageUploadAction" class="com.wxy.action.upload.ImageUploadAction" scope="prototype">
@@ -62,6 +68,12 @@
     <!-- Stream -->
     <bean id = "SpringRandomImageStream" class="com.wxy.action.stream.image.RandomImageStreamAction" scope="prototype">
         <constructor-arg index="0" ref="ImageService" />
+    </bean>
+    <bean id="SpringImageRankStreamAction" class="com.wxy.action.stream.image.ImageRankStreamAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+    </bean>
+    <bean id="SpringOnePoolAction" class="com.wxy.action.stream.pool.OnePoolAction" scope="prototype">
+
     </bean>
 
     <!-- Single -->

@@ -13,5 +13,18 @@
             </result>
         </action>
 
+        <action name="ImageRankStreamAction" class="SpringImageRankStreamAction">
+            <result name="success">
+                /stream/image/image_rank_stream.jsp
+            </result>
+        </action>
+    </package>
+
+    <package name=" stream_pool" namespace="/stream/pool" extends="struts-default">
+        <action name="OnePoolAction" class="SpringOnePoolAction">
+            <result name="success">
+
+            </result>
+        </action>
     </package>
 </struts>

@@ -1,41 +1,28 @@
-package com.wxy.action.user;
+package com.wxy.action.stream.image;
 
 import VO.Postmodel;
-import VO.Usermodel;
-import com.wxy.action.stream.image.ImageStreamBaseAction;
-import org.apache.struts2.interceptor.SessionAware;
 import org.shinshi.gallery.service.ImageService;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
  * User: apple
- * Date: 13-6-17
- * Time: 下午9:06
+ * Date: 13-7-3
+ * Time: 上午4:16
  * To change this template use File | Settings | File Templates.
  */
-public class UserPostModelAction extends ImageStreamBaseAction implements SessionAware
+public class ImageRankStreamAction extends ImageStreamBaseAction
 {
     //Constructor
-    public UserPostModelAction()
+    public ImageRankStreamAction()
     {
         super();
     }
-    public UserPostModelAction(ImageService imageService)
+    public ImageRankStreamAction(ImageService imageService)
     {
         super();
-        setImageService(imageService);
-    }
-
-    //Session Aware
-    private Map session;
-    public Map getSession(){return this.session;}
-    @Override
-    public void setSession(Map session)
-    {
-        this.session = session;
+        this.setImageService(imageService);
     }
 
     //Service
@@ -47,16 +34,27 @@ public class UserPostModelAction extends ImageStreamBaseAction implements Sessio
         this.imageService = imageService;
     }
 
+    //Param
+    private String streamType;
+    public void setStreamType(String streamType)
+    {
+        this.streamType = streamType;
+    }
+    public String getStreamType()
+    {
+        return this.streamType;
+    }
+
 
     //Action Support
     public String execute()
     {
-        Usermodel usermodel = (Usermodel)getSession().get("UserModel");
-        List<Integer> idList = getImageService().getByUserId(usermodel.getId());
 
         int from = 0, to = 0;
 
-        int totalPage = idList.size() / 20 + 1;
+        int totalCount = getImageService().countAll();
+        int totalPage = totalCount / 20 + 1;
+
         if (getCurrentPage() >= totalPage)
         {
             setCurrentPage(totalPage - 1);
@@ -67,17 +65,32 @@ public class UserPostModelAction extends ImageStreamBaseAction implements Sessio
         }
         from = getCurrentPage() * 20;
         to = (getCurrentPage() + 1) * 20;
-        if (to > idList.size())
+        if (to > totalCount)
         {
-            to = idList.size();
+            to = totalCount;
         }
 
-        for (int i = from; i < to; i++ )
+        List<Integer> idList = null;
+
+        if (this.streamType.equals("New"))  //最新上传
         {
-            Integer postId = idList.get(i);
+            idList = getImageService().getRecentImage(from,to - from);
+        }
+        else if (this.streamType.equals("TopHit"))
+        {
+            idList = getImageService().getImageOfTopHit(from,to - from);
+        }
+        else if (this.streamType.equals("TopRate"))
+        {
+            idList = getImageService().getImageOfTopRemark(from,to - from);
+        }
+
+        for (Integer postId : idList)
+        {
             Postmodel postmodel = (Postmodel)getImageService().get(postId);
             getImagesList().add(postmodel);
         }
+
 
         int pageFrom = getCurrentPage() - 5;
         int pageTo = getCurrentPage() + 5;
@@ -94,6 +107,7 @@ public class UserPostModelAction extends ImageStreamBaseAction implements Sessio
         {
             getShowPages().add(i);
         }
+
 
         return SUCCESS;
     }

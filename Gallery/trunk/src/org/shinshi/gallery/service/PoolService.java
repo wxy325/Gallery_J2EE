@@ -18,6 +18,7 @@ import java.util.List;
  */
 public interface PoolService <POOL extends Serializable, PK extends Serializable>
 {
+    public POOL get(PK id);
     public PK save(POOL pool);          //pool带创建者
     public void remove(PK id);
     public void addImage(PK poolId, PK imageId);

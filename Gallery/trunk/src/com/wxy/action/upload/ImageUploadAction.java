@@ -99,6 +99,13 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
         this.imageFileName = imageFileName;
     }
 
+    private  List<String> title = new ArrayList<String>();
+    public List<String> getTitle() {
+        return title;
+    }
+    public void setTitle(List<String> title) {
+        this.title = title;
+    }
 
     private List<String> tagStrings = new ArrayList<String>();
     public List<String> getTagStrings()
@@ -131,8 +138,10 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
                 File imageFile = new File(ServletActionContext.getServletContext().getRealPath("ImageFolder")+ "/" + imageFileNameStr);
                 copy(getImages().get(i), imageFile);  //将图片写入本地
 
+                String titleStr = this.getTitle().get(i);
                 //model部分
                 Postmodel postModel = new Postmodel();
+                postModel.setTitle(titleStr);
                 postModel.setMd5(md5Str);
                 postModel.setName(imageFileNameStr);
 //                postModel.setExtension(extensionStr);

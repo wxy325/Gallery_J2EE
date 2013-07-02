@@ -23,6 +23,15 @@ public class StreamBaseAction extends ActionSupport
     {
         return this.currentPage;
     }
+    public Integer getPreviewPage()
+    {
+        return this.currentPage - 1;
+    }
+    public Integer getNextPage()
+    {
+        return this.currentPage + 1;
+    }
+
 
     private List<Integer> showPages = new ArrayList<Integer>();
     public List<Integer> getShowPages()
@@ -30,13 +39,5 @@ public class StreamBaseAction extends ActionSupport
         return this.showPages;
     }
 
-    private String streamType;
-    public void setStreamType(String streamType)
-    {
-        this.streamType = streamType;
-    }
-    public String getStreamType()
-    {
-        return null;
-    }
+
 }

@@ -50,9 +50,9 @@ public class DBAforPost implements ImageDao {
 
 	
 	public void update(Postmodel model) {
-		String name = model.getName();
-		Integer id = getIdByUsername(name);
-		model.setId(id);
+//		String name = model.getName();
+//		Integer id = getIdByUsername(name);
+//		model.setId(id);
 		Session session = HibernateSessionFactory.getSession();
 		Transaction tst = session.beginTransaction();
 		try{
