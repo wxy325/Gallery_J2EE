@@ -1,12 +1,16 @@
 package com.wxy.action.upload;
 
+import VO.Descriptionids;
 import VO.Postmodel;
+import VO.Tagmodel;
 import VO.Usermodel;
 import com.opensymphony.xwork2.ActionSupport;
 import com.wxy.md5.MD5Util;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
+import org.shinshi.gallery.service.DescriptionService;
 import org.shinshi.gallery.service.ImageService;
+import org.shinshi.gallery.service.TagService;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -30,20 +34,37 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
     {
         super();
     }
-    public ImageUploadAction(ImageService imageService)
+    public ImageUploadAction(ImageService imageService,
+                             TagService tagService,
+                             DescriptionService descriptionService)
     {
         super();
         this.imageService = imageService;
+        this.setTagService(tagService);
+        this.setDescriptionService(descriptionService);
     }
 
     //Service
     ImageService imageService;
+    TagService tagService;
+    DescriptionService descriptionService;
     public ImageService getImageService() {
         return imageService;
     }
-
     public void setImageService(ImageService imageService) {
         this.imageService = imageService;
+    }
+    public TagService getTagService() {
+        return tagService;
+    }
+    public void setTagService(TagService tagService) {
+        this.tagService = tagService;
+    }
+    public DescriptionService getDescriptionService() {
+        return descriptionService;
+    }
+    public void setDescriptionService(DescriptionService descriptionService) {
+        this.descriptionService = descriptionService;
     }
 
     //Session Aware
@@ -88,6 +109,13 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
     {
         this.tagStrings = tagStrings;
     }
+    private  List<String> descriptions = new ArrayList<String>();
+    public List<String> getDescriptions() {
+        return descriptions;
+    }
+    public void setDescriptions(List<String> descriptions) {
+        this.descriptions = descriptions;
+    }
 
     @Override
     public String execute()
@@ -124,16 +152,51 @@ public class ImageUploadAction extends ActionSupport implements SessionAware
 //                postModel.setRating(Postmodel.RatingSafe);
 //                postModel.setStatus(Postmodel.StatusActive);
                 Usermodel userModel = (Usermodel)getSession().get("UserModel");
+                Integer userId = null;
                 if (userModel != null && (userModel instanceof Usermodel))
                 {
-                    postModel.setCreatorId(userModel.getId());
+//                    postModel.setCreatorId(userModel.getId());
+                    userId = userModel.getId();
                 }
                 else
                 {
-                    postModel.setCreatorId(0);
+//                    postModel.setCreatorId(0);
+                    userId = null;
                 }
+                postModel.setCreatorId(userId);
 
-                this.imageService.save(postModel);
+                Integer postId = (Integer) this.imageService.save(postModel);
+
+                String tagStr = getTagStrings().get(i);
+                String[] tagArray = tagStr.split(" ");
+                for (String aTag : tagArray)
+                {
+                    Tagmodel tagModel = (Tagmodel)getTagService().get(aTag);
+                    Integer tagId = null;
+                    if (tagModel == null)
+                    {
+                        tagModel = new Tagmodel();
+                        tagModel.setName(aTag);
+                        tagId = (Integer)getTagService().save(tagModel);
+                    }
+                    else
+                    {
+                        tagId = tagModel.getId();
+                    }
+                    getTagService().addTagToImage(postId,tagId);
+                }
+                //PostModel保存完毕
+
+                String desStr = getDescriptions().get(i);
+                if (desStr.length() != 0)
+                {
+                    Descriptionids des = new Descriptionids();
+                    des.setDate(time);
+                    des.setOwnerId(userId);
+                    des.setPictureId(postId);
+                    des.setDescription(desStr);
+                    Integer desId = (Integer)getDescriptionService().save(des);
+                }
 
             }
             return SUCCESS;

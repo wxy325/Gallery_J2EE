@@ -53,6 +53,11 @@
     </bean>
 
     <!-- Upload -->
+    <bean id="SpringImageUploadAction" class="com.wxy.action.upload.ImageUploadAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+        <constructor-arg index="1" ref="TagService" />
+        <constructor-arg index="2" ref="DescriptionService" />
+    </bean>
 
     <!-- Stream -->
     <bean id = "SpringRandomImageStream" class="com.wxy.action.stream.image.RandomImageStreamAction" scope="prototype">
