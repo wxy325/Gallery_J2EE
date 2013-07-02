@@ -7,6 +7,8 @@ import org.apache.struts2.interceptor.SessionAware;
 import org.shinshi.gallery.service.DescriptionService;
 import org.shinshi.gallery.service.ImageService;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -76,7 +78,7 @@ public class SingleEditDescriptionAction extends ActionSupport implements Sessio
     public void setPostmodel(Postmodel postmodel) {
         this.postmodel = postmodel;
     }
-    private List<Descriptionids> descriptionList;
+    private List<Descriptionids> descriptionList = new ArrayList<Descriptionids>();
     public List<Descriptionids> getDescriptionList() {
         return descriptionList;
     }
@@ -103,7 +105,12 @@ public class SingleEditDescriptionAction extends ActionSupport implements Sessio
             return ERROR;
         }
 
-        this.setDescriptionList(this.getDescriptionService().getImageDes(getPostmodel().getId()));
+        List<Serializable> temp = this.getDescriptionService().getImageDes(getPostmodel().getId());
+        for (Serializable id : temp)
+        {
+            this.getDescriptionList().add((Descriptionids)this.getDescriptionService().get(id));
+        }
+
         return SUCCESS;
     }
 }

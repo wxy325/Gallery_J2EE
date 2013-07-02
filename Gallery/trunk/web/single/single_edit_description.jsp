@@ -43,14 +43,14 @@
 
         <table class="table">
             <s:iterator value="descriptionList" status="status">
-                <%--<tr>--%>
-                    <%--<td>--%>
-                <p>
+                <tr>
+                    <td>
+                <%--<p>--%>
                         <s:property value="date" />
-                        <s:property value="comment" />
-                </p>
-                    <%--</td>--%>
-                <%--</tr>--%>
+                        <s:property value="description" />
+                <%--</p>--%>
+                    </td>
+                </tr>
             </s:iterator>
         </table>
     </s:else>
