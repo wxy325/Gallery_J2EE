@@ -110,12 +110,28 @@ public class SingleImageAction extends ActionSupport implements SessionAware
     }
 
     //Avg Remark
-    private Float averageReamrk;
-    public Float getAverageReamrk() {
-        return averageReamrk;
+    private Float averageRemark;
+    private Integer userRemark;
+    private Boolean hasUser;
+
+    public Float getAverageRemark() {
+        return averageRemark;
     }
-    public void setAverageReamrk(Float averageReamrk) {
-        this.averageReamrk = averageReamrk;
+    public void setAverageRemark(Float averageRemark) {
+        this.averageRemark = averageRemark;
+    }
+    public Integer getUserRemark() {
+        return userRemark;
+    }
+    public void setUserRemark(Integer userRemark) {
+        this.userRemark = userRemark;
+    }
+
+    public Boolean getHasUser() {
+        return hasUser;
+    }
+    public void setHasUser(Boolean hasUser) {
+        this.hasUser = hasUser;
     }
 
     //Service
@@ -190,8 +206,8 @@ public class SingleImageAction extends ActionSupport implements SessionAware
 
         try
         {
-            setAverageReamrk(null);
-            setAverageReamrk(this.getRemarkService().getAverageRemark(this.getPostmodel().getId()));
+            setAverageRemark(null);
+            setAverageRemark(this.getRemarkService().getAverageRemark(this.getPostmodel().getId()));
         }catch (Exception e){}
 
         try {
@@ -234,6 +250,23 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         {}
 
         Usermodel currentUser = (Usermodel)getSession().get("UserModel");
+        if (currentUser == null)
+        {
+            setHasUser(false);
+            setUserRemark(null);
+        }
+        else
+        {
+            setHasUser(true);
+            try
+            {
+                Remarkids remark = (Remarkids)getRemarkService().getRemarkbyUsermodelandPostmodel(currentUser.getId(),getImageId()).get(0);
+                setUserRemark(remark.getRemark());
+            }
+            catch (Exception e)
+            {}
+        }
+
         if (getCreator() == null)
         {
             this.setDescriptionEditable(true);

@@ -23,12 +23,13 @@
 <body>
     <jsp:include page="/user/user_head.jsp" />
 
+    <div class="container">
     <p>
         新描述
     </p>
     <form action="/single/SingleEditDescriptionFinishAction" method="POST">
         <input type="text" name="imageId" value="<s:property value="imageId" />" style="display: none"/>
-        <textarea rows="3" cols="80" id="descriptionArea" name="descriptionStr"></textarea>
+        <textarea rows="3" class="span9" id="descriptionArea" name="descriptionStr"><s:property value="descriptionList[0].description" /></textarea>
 
         <input type="submit" onclick='addDes(<s:property value="imageId" />)' value="提交" />
     </form>
@@ -41,24 +42,40 @@
     <s:else>
         <p>历史描述</p>
 
+
         <table class="table">
+            <%!
+                int i = 0;
+            %>
             <s:iterator value="descriptionList" status="status">
+
                 <tr>
                     <td>
-                <%--<p>--%>
+                        <input type="button" value="apply" onclick="replace('history<%=i%>')"/>
+                    </td>
+                    <td id="history<%=i%>"><s:property value="description" /></td>
+                    <td>
                         <s:property value="date" />
-                        <s:property value="description" />
-                <%--</p>--%>
                     </td>
                 </tr>
+                <%
+                    i++;
+                %>
             </s:iterator>
         </table>
     </s:else>
+
+    </div>
     <script src="/js/jquery-2.0.0.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="src/single_edit_description.js"></script>
     <script type="text/javascript">
-
+        function replace(str)
+        {
+            var textArea = document.getElementById("descriptionArea");
+            var text = document.getElementById(str);
+            textArea.value = text.innerHTML;
+        }
     </script>
 </body>
 </html>

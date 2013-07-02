@@ -86,7 +86,8 @@
         <constructor-arg index="2" ref="CommentService" />
     </bean>
     <bean id="SpringAjaxImageAddRemarkAction" class="com.wxy.action.ajax.ImageAddRemarkAction" scope="prototype">
-
+        <constructor-arg index="0" ref="ImageService" />
+        <constructor-arg index="1" ref="RemarkService" />
     </bean>
     <bean id="SpringAjaxUserCheckNameAction" class="com.wxy.action.ajax.UserNameCheckAction" scope="prototype">
         <constructor-arg index="0" ref="AccountService" />

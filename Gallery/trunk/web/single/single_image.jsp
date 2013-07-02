@@ -40,7 +40,7 @@
                 <div>
                     <img src="/ImageFolder/<s:property value='postmodel.name'/>" class="img-polaroid" alt="" width="800"/>
                 </div>
-                <p>
+                <div id="image_description" >
                     <br />
                     <s:if test="descriptionids==null">
                         暂无图片描述
@@ -49,7 +49,7 @@
                         <s:property value="descriptionids.description" />
                     </s:else>
                     <br />
-                </p>
+                </div>
 
                 <s:if test="descriptionEditable">
                     <p style="text-align: right">
@@ -122,6 +122,26 @@
         </div>
     </div>
 
+        <div class="row">
+            <div class="span9">
+                <s:if test="hasUser">
+                    评分：
+                    <s:if test="userReamrk==null">
+                        <div class="btn-group">
+                            <button class="btn" onclick="addRemark(1)">1</button>
+                            <button class="btn" onclick="addRemark(2)">2</button>
+                            <button class="btn" onclick="addRemark(3)">3</button>
+                            <button class="btn" onclick="addRemark(4)">4</button>
+                            <button class="btn" onclick="addRemark(5)">5</button>
+                        </div>
+                    </s:if>
+                    <s:else>
+                        你的评分：<s:property value="userRemark" />
+                    </s:else>
+                </s:if>
+
+            </div>
+        </div>
 
         <div class="row">
             <div class="span9">
@@ -183,6 +203,19 @@
                 alert("评论成功");
                 location.reload();
             });
+        }
+
+        function addRemark(score)
+        {
+            $.post("/ajax/AjaxImageAddRemarkAction",{"postId":<s:property value="imageId" />, "score": score},
+            function(data)
+            {
+                var fSuccess = data.success;
+                var avg = data.avgRemark;
+                alert(data);
+                alert("success:" + fSuccess + "  avg:" + avg);
+            });
+
         }
     </script>
 

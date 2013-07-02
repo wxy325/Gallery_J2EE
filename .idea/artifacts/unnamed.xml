@@ -1,0 +1,63 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="trunk" />
+          <element id="dir-copy" path="$PROJECT_DIR$/Gallery/trunk/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/asm-3.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/jta-1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/cglib-2.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/hibernate3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/ognl-3.0.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-web.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/antlr-2.7.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/asm-tree-3.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/log4j-1.2.14.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/ehcache-1.2.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/aopalliance-1.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/asm-commons-3.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/slf4j-api-1.5.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/commons-io-2.0.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/ejb3-persistence.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/commons-lang3-3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/freemarker-2.3.19.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/xwork-core-2.3.14.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/javassist-3.9.0.GA.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/hibernate-validator.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/javassist-3.11.0.GA.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/slf4j-log4j12-1.5.8.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/struts2-core-2.3.14.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/hibernate-annotations.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/commons-collections-3.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/hibernate-entitymanager.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-tx-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/commons-fileupload-1.2.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-aop-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-jms-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-orm-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-oxm-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-core-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-jdbc-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-test-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-beans-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-aspects-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-context-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/hibernate-commons-annotations.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/mysql-connector-java-5.1.18-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-expression-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-instrument-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-context-support-3.2.2.RELEASE.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/Gallery/trunk/lib/spring-instrument-tomcat-3.2.2.RELEASE.jar" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="trunk/web/Web" />
+    </root>
+  </artifact>
+</component>
