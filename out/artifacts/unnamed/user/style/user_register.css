@@ -1,0 +1,11 @@
+#name_prompt,#rename_prompt,#password_prompt,#testPassword_prompt,#rePassword_prompt,#email_prompt,#email_format_prompt
+{
+    color: red;
+    display: none;
+}
+
+body
+{
+    background:url(/img/bg.gif) 0 0 repeat #f7f5f5;
+    padding-top: 80px;
+}

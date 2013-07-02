@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="single" namespace="/single" extends="struts-default">
+
+        <action name="SingleImageAction" class="SpringSingleImageAction">
+            <result name="success">
+                /single/single_image.jsp
+            </result>
+            <result name="error">
+                /single/single_image_error.jsp
+                        single_image_error.jsp
+            </result>
+        </action>
+
+        <action name="SingleEditDescriptionAction" class="SpringSingleEditDescriptionAction">
+            <result name="success">
+                /single/single_edit_description.jsp
+            </result>
+            <result name="error">
+                /single/single_image_error.jsp
+            </result>
+        </action>
+
+        <action name="SingleEditDescriptionFinishAction" class="SpringSingleEditDescriptionFinishAction">
+            <result name="success" type="chain">
+                <param name="actionName">SingleImageAction</param>
+                <param name="namespace">/single</param>
+            </result>
+
+            <result name="error">
+                /single/single_image_error.jsp
+            </result>
+        </action>
+
+
+    </package>
+
+</struts>

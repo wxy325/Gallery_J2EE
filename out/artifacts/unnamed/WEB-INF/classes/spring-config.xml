@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="DBAforUser" class="DBA.DBAforUser"/>
+    <bean id="ArtistDao" class="DBA.DBAforArtist"/>
+    <bean id="CommentDao" class="DBA.DBAforComment"/>
+    <bean id="DescriptionDao" class="DBA.DBAforDescription"/>
+    <bean id="IAccountDao" class="DBA.DBAforUser"/>
+    <bean id="ImageDao" class="DBA.DBAforPost"/>
+    <bean id="PoolDao" class="DBA.DBAforPool"/>
+    <bean id="RemarkDao" class="DBA.DBAforRemark"/>
+    <bean id="TagDao" class="DBA.DBAforTag"/>
+
+    <bean id="AccountService" class="org.shinshi.gallery.service.Impl.AccountServiceImpl">
+        <constructor-arg index="0" ref="DBAforUser"/>
+    </bean>
+    <bean id="ArtistService" class="org.shinshi.gallery.service.Impl.ArtistServiceImpl">
+        <constructor-arg index="0" ref="ArtistDao"/>
+    </bean>
+    <bean id="CommentService" class="org.shinshi.gallery.service.Impl.CommentServiceImpl">
+        <constructor-arg index="0" ref="CommentDao"/>
+    </bean>
+    <bean id="DescriptionService" class="org.shinshi.gallery.service.Impl.DescriptionServiceImpl">
+        <constructor-arg index="0" ref="DescriptionDao"/>
+    </bean>
+    <bean id="ImageService" class="org.shinshi.gallery.service.Impl.ImageServiceImpl">
+        <constructor-arg index="0" ref="ImageDao"/>
+    </bean>
+    <bean id="PoolService" class="org.shinshi.gallery.service.Impl.PoolServiceImpl">
+        <constructor-arg index="0" ref="PoolDao"/>
+    </bean>
+    <bean id="RemarkService" class="org.shinshi.gallery.service.Impl.RemarkServiceImpl">
+        <constructor-arg index="0" ref="RemarkDao"/>
+    </bean>
+    <bean id="TagService" class="org.shinshi.gallery.service.Impl.TagServiceImpl">
+        <constructor-arg index="0" ref="TagDao"/>
+    </bean>
+
+
+    <!-- Action -->
+
+    <!-- User -->
+    <bean id="SpringUserRegisterAction" class="com.wxy.action.user.UserRegisterAction" scope="prototype">
+        <constructor-arg index="0" ref="AccountService" />
+    </bean>
+    <bean id="SpringUserLoginAction" class="com.wxy.action.user.UserLoginAction" scope="prototype">
+        <constructor-arg index="0" ref="AccountService" />
+    </bean>
+    <bean id="SpringUserEditAction" class="com.wxy.action.user.UserEditAction" scope="prototype">
+        <constructor-arg index="0" ref="AccountService" />
+    </bean>
+
+    <!-- Upload -->
+
+    <!-- Stream -->
+    <bean id = "SpringRandomImageStream" class="com.wxy.action.stream.image.RandomImageStreamAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+    </bean>
+
+    <!-- Single -->
+    <bean id= "SpringSingleImageAction" class="com.wxy.action.single.SingleImageAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+        <constructor-arg index="1" ref="AccountService" />
+        <constructor-arg index="2" ref="ArtistService" />
+        <constructor-arg index="3" ref="DescriptionService" />
+        <constructor-arg index="4" ref="CommentService" />
+        <constructor-arg index="5" ref="RemarkService" />
+    </bean>
+
+    <bean id="SpringSingleEditDescriptionAction" class="com.wxy.action.single.SingleEditDescriptionAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+        <constructor-arg index="1" ref="DescriptionService" />
+    </bean>
+
+    <bean id="SpringSingleEditDescriptionFinishAction" class="com.wxy.action.single.SingleEditDescriptionFinishAction" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+        <constructor-arg index="1" ref="DescriptionService" />
+    </bean>
+
+    <!-- ajax -->
+    <bean id="SpringAjaxImageAddCommentAction" class="com.wxy.action.ajax.ImageAddCommentAction" scope="prototype">
+        <constructor-arg index="0" ref="AccountService" />
+        <constructor-arg index="1" ref="ImageService" />
+        <constructor-arg index="2" ref="CommentService" />
+    </bean>
+    <bean id="SpringAjaxImageAddRemarkAction" class="com.wxy.action.ajax.ImageAddRemarkAction" scope="prototype">
+
+    </bean>
+    <bean id="SpringAjaxUserCheckNameAction" class="com.wxy.action.ajax.UserNameCheckAction" scope="prototype">
+        <constructor-arg index="0" ref="AccountService" />
+    </bean>
+
+</beans>

@@ -1,0 +1,11 @@
+#name_prompt,#password_prompt
+{
+    color: red;
+    display: none;
+}
+
+body
+{
+    background:url(/img/bg.gif) 0 0 repeat #f7f5f5;
+    padding-top: 80px;
+}

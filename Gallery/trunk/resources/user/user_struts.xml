@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="user" namespace="/user" extends="struts-default">
+
+        <action name="user_register" class="SpringUserRegisterAction">
+            <result name="success">
+                /user/user_register_success.jsp
+            </result>
+            <result name="error">
+                /user/user_register_fail.jsp
+            </result>
+            <result name="input">
+                /user/user_register.jsp
+            </result>
+        </action>
+
+        <action name="user_login" class="SpringUserLoginAction">
+            <result name="success">
+                /user/user_login_success.jsp
+            </result>
+            <result name="error">
+                /user/user_login_fail.jsp
+            </result>
+            <result name="input">
+                /user/user_login.jsp
+            </result>
+        </action>
+
+        <action name="user_logout" class="com.wxy.action.user.UserLogoutAction">
+            <result>
+                /user/user_logout.jsp
+            </result>
+        </action>
+
+
+
+        <action name="user_postmodel" class="com.wxy.action.user.UserPostModelAction">
+            <result>
+                /user/post/user_postmodel.jsp
+            </result>
+        </action>
+
+
+
+        <action name="user_poolmodel" class="com.wxy.action.user.UserPoolAction">
+            <result>
+                /user/pool/user_poolmodel.jsp
+            </result>
+        </action>
+    </package>
+
+    <package name="user_space" namespace="/user/space" extends="struts-default">
+        <action name="user_space" class="com.wxy.action.user.UserSpaceAction">
+            <result name="info">
+                /user/space/user_space_info.jsp
+            </result>
+            <result name="comment">
+                /user/space/user_space_comment.jsp
+            </result>
+            <result name="remark">
+                /user/space/user_space_remark.jsp
+            </result>
+            <result name="edit">
+                /user/space/user_space_edit.jsp
+            </result>
+            <result name="input" type="redirect">
+                /user/user_login.jsp
+            </result>
+        </action>
+
+        <action name="user_edit" class="SpringUserEditAction">
+            <result name="success">
+                /user/space/user_space_edit_success.jsp
+            </result>
+            <result name="error">
+                /user/space/user_space_edit_fail.jsp
+            </result>
+            <result name="input">
+                /user/space/user_space_edit.jsp
+            </result>
+        </action>
+    </package>
+
+</struts>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="upload" namespace="/upload" extends="struts-default">
+
+        <action name="image_upload" class="com.wxy.action.upload.ImageUploadAction">
+            <result name="success">
+                /upload/image_upload_success.jsp
+            </result>
+            <result name="error">
+                /upload/image_upload_fail.jsp
+            </result>
+            <result name="input">
+                /upload/image_upload.jsp
+            </result>
+        </action>
+
+    </package>
+</struts>

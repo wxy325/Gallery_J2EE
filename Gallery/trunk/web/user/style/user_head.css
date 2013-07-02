@@ -1,0 +1,21 @@
+#user_head
+{
+    background-color: dimgray;
+}
+
+#user_head_text
+{
+    text-align: right;
+}
+#user_head a:hover
+{
+    color: white;
+}
+#user_head a:visited
+{
+    color: lightgray;
+}
+#user_head a
+{
+    color: lightgray;
+}
