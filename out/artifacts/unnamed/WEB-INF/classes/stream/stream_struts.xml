@@ -18,6 +18,19 @@
                 /stream/image/image_rank_stream.jsp
             </result>
         </action>
+    </package>
 
+    <package name="stream_pool" namespace="/stream/pool" extends="struts-default">
+        <action name="OnePoolAction" class="SpringOnePoolAction">
+            <result name="success">
+                /stream/pool/one_pool.jsp
+            </result>
+            <result name="input" type="redirect">
+                /user/user_login.jsp
+            </result>
+            <result name="error" type="redirect">
+                /user/user_login.jsp
+            </result>
+        </action>
     </package>
 </struts>

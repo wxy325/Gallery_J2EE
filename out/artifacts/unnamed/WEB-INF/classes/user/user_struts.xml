@@ -9,7 +9,8 @@
 
         <action name="user_register" class="SpringUserRegisterAction">
             <result name="success">
-                /user/user_register_success.jsp
+                <!--/user/user_register_success.jsp-->
+                /
             </result>
             <result name="error">
                 /user/user_register_fail.jsp
@@ -21,7 +22,8 @@
 
         <action name="user_login" class="SpringUserLoginAction">
             <result name="success">
-                /user/user_login_success.jsp
+                <!--/user/user_login_success.jsp-->
+                /
             </result>
             <result name="error">
                 /user/user_login_fail.jsp
@@ -43,13 +45,19 @@
             <result>
                 /user/user_postmodel.jsp
             </result>
+            <result name="error" type="redirect">
+                /user/user_login.jsp
+            </result>
         </action>
 
 
 
-        <action name="user_poolmodel" class="com.wxy.action.user.UserPoolAction">
+        <action name="user_poolmodel" class="SpringUserPoolModel">
             <result>
                 /user/user_poolmodel.jsp
+            </result>
+            <result name="error" type="redirect">
+                /user/user_login.jsp
             </result>
         </action>
     </package>

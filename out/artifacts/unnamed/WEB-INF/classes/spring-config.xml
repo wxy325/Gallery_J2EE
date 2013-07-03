@@ -54,6 +54,9 @@
     <bean id="SpringUserPostModel" class="com.wxy.action.user.UserPostModelAction" scope="prototype">
         <constructor-arg index="0" ref="ImageService" />
     </bean>
+    <bean id="SpringUserPoolModel" class="com.wxy.action.user.UserPoolAction" scope="prototype">
+        <constructor-arg index="0" ref="PoolService" />
+    </bean>
 
     <!-- Upload -->
     <bean id="SpringImageUploadAction" class="com.wxy.action.upload.ImageUploadAction" scope="prototype">
@@ -69,6 +72,10 @@
     <bean id="SpringImageRankStreamAction" class="com.wxy.action.stream.image.ImageRankStreamAction" scope="prototype">
         <constructor-arg index="0" ref="ImageService" />
     </bean>
+    <bean id="SpringOnePoolAction" class="com.wxy.action.stream.pool.OnePoolAction" scope="prototype">
+        <constructor-arg index="0" ref="PoolService" />
+        <constructor-arg index="1" ref="ImageService" />
+    </bean>
 
     <!-- Single -->
     <bean id= "SpringSingleImageAction" class="com.wxy.action.single.SingleImageAction" scope="prototype">
@@ -79,6 +86,7 @@
         <constructor-arg index="4" ref="CommentService" />
         <constructor-arg index="5" ref="RemarkService" />
         <constructor-arg index="6" ref="TagService" />
+        <constructor-arg index="7" ref="PoolService" />
     </bean>
 
     <bean id="SpringSingleEditDescriptionAction" class="com.wxy.action.single.SingleEditDescriptionAction" scope="prototype">
@@ -103,6 +111,13 @@
     </bean>
     <bean id="SpringAjaxUserCheckNameAction" class="com.wxy.action.ajax.UserNameCheckAction" scope="prototype">
         <constructor-arg index="0" ref="AccountService" />
+    </bean>
+
+    <bean id="SpringUserAddPoolAction" class="com.wxy.action.ajax.UserAddPoolAction" scope="prototype">
+        <constructor-arg index="0" ref="PoolService" />
+    </bean>
+    <bean id="SpringPoolAddImage" class="com.wxy.action.ajax.PoolAddImageAction" scope="prototype">
+        <constructor-arg index="0" ref="PoolService" />
     </bean>
 
 </beans>

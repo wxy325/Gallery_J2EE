@@ -10,6 +10,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/ajax" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/pool" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/single" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single" />
@@ -25,10 +26,12 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/ImageRankStreamAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/RandomImageStreamAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleEditDescriptionAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleEditDescriptionFinishAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserNameCheckAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/src/blocksit.min.js" />
@@ -36,6 +39,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/src/image_stream.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/style/image_upload.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/src/image_upload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/style/random_image_stream.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/random_image_stream.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/style/single_edit_description.css" />
@@ -421,7 +425,7 @@
     <file path="/DBAforAll.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371490114823" ignored="false" />
     <file path="/Dummy.txt" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372738857715" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370190934539" ignored="false" />
-    <file path="/spring-config.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372801827205" ignored="false" />
+    <file path="/spring-config.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809294983" ignored="false" />
     <file path="/Remarkids.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370608670203" ignored="false" />
     <file path="/CommentService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371489636736" ignored="false" />
     <file path="/DescriptionService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372672157213" ignored="false" />
@@ -441,7 +445,7 @@
     <file path="/ImageStreamBase.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371476488925" ignored="false" />
     <file path="/UserPostModelAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372794707057" ignored="false" />
     <file path="/user_postmodel.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372798978961" ignored="false" />
-    <file path="/user_poolmodel.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372800404929" ignored="false" />
+    <file path="/user_poolmodel.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809109053" ignored="false" />
     <file path="/PoolStreamBaseAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371480595535" ignored="false" />
     <file path="/UserPoolAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372801385943" ignored="false" />
     <file path="/user_space_info.css" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371481749633" ignored="false" />
@@ -457,22 +461,22 @@
     <file path="/CommentServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372681204747" ignored="false" />
     <file path="/DescriptionServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372681214562" ignored="false" />
     <file path="/ImageServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372796833101" ignored="false" />
-    <file path="/PoolServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372801367680" ignored="false" />
+    <file path="/PoolServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809668714" ignored="false" />
     <file path="/RemarkServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372673362130" ignored="false" />
     <file path="/TagServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372790192247" ignored="false" />
     <file path="/image_upload.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372681556021" ignored="false" />
     <file path="/RandomImageStreamAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372690821843" ignored="false" />
-    <file path="/stream_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372801852625" ignored="false" />
+    <file path="/stream_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372807718061" ignored="false" />
     <file path="/random_image_stream.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372703683143" ignored="false" />
     <file path="/random_image_stream.css" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372694406443" ignored="false" />
     <file path="/random_image_stream.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372694881466" ignored="false" />
-    <file path="/SingleImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372791132631" ignored="false" />
+    <file path="/SingleImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372805668971" ignored="false" />
     <file path="/single_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372777683831" ignored="false" />
-    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372789823525" ignored="false" />
+    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372806636492" ignored="false" />
     <file path="/SingleEditDescriptionAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372778880144" ignored="false" />
     <file path="/single_edit_description.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372780253470" ignored="false" />
     <file path="/single_image_error.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372735297741" ignored="false" />
-    <file path="/ajax_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372761406388" ignored="false" />
+    <file path="/ajax_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372802929136" ignored="false" />
     <file path="/UserNameCheckAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372761580154" ignored="false" />
     <file path="/ImageAddCommentAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372766591624" ignored="false" />
     <file path="/SingleEditDescriptionFinishAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372776212714" ignored="false" />
@@ -483,6 +487,10 @@
     <file path="/ImageRankStreamAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372798570599" ignored="false" />
     <file path="/image_rank_stream.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372798772647" ignored="false" />
     <file path="/user_poolmodel.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372800363568" ignored="false" />
+    <file path="/OnePoolAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809476833" ignored="false" />
+    <file path="/UserAddPoolAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372803420080" ignored="false" />
+    <file path="/PoolAddImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809769947" ignored="false" />
+    <file path="/one_pool.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372807971991" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -603,22 +611,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user_poolmodel.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
+      <file leaf-file-name="stream_struts.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="662" selection-end="662" vertical-scroll-proportion="-15.0">
+            <state line="22" column="55" selection-start="770" selection-end="782" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserPoolAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserPoolAction.java">
+      <file leaf-file-name="user_poolmodel.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="8" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1193#1204#0" expanded="true" />
-              </folding>
+            <state line="43" column="24" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-13.541667">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -626,34 +632,38 @@
       <file leaf-file-name="OnePoolAction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+            <state line="84" column="27" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoolAddImageAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="50" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoolServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="28" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.44315544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stream_struts.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml">
+      <file leaf-file-name="one_pool.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="913" selection-end="913" vertical-scroll-proportion="0.8259912">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="3706" selection-end="3706" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoolService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="27" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
+            <state line="39" column="16" selection-start="1022" selection-end="1022" vertical-scroll-proportion="3.9583333">
               <folding />
             </state>
           </provider>
@@ -669,22 +679,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_head.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/resources/single/single_struts.xml" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/ImageRankStreamAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/stream/image/image_rank_stream.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_postmodel.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/upload/ImageUploadAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforPost.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/user/src/user_poolmodel.js" />
         <option value="$PROJECT_DIR$/Gallery/trunk/web/user/style/user_poolmodel.css" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/resources/user/user_struts.xml" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserPoolAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/resources/user/user_struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp" />
         <option value="$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -862,50 +872,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -928,7 +894,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="single" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1118,6 +1124,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="single" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1155,6 +1243,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1664,125 +1770,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/ImageServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="642" selection-end="642" vertical-scroll-proportion="0.60280377">
+        <state line="24" column="17" selection-start="510" selection-end="510" vertical-scroll-proportion="0.5704846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/VO/Poolmodel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.26431718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="20" selection-start="5226" selection-end="5226" vertical-scroll-proportion="1.2757794">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="0" selection-start="6708" selection-end="6708" vertical-scroll-proportion="0.29478458">
+        <state line="156" column="27" selection-start="4974" selection-end="4974" vertical-scroll-proportion="1.5253012">
           <folding>
-            <element signature="e#4667#4677#0" expanded="true" />
+            <element signature="e#3941#3952#0" expanded="true" />
+            <element signature="e#5185#5195#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/upload/ImageUploadAction.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserNameCheckAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="45" selection-start="4674" selection-end="4674" vertical-scroll-proportion="1.1211454">
+        <state line="13" column="54" selection-start="362" selection-end="383" vertical-scroll-proportion="0.33259913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="6" selection-start="950" selection-end="1171" vertical-scroll-proportion="0.7929515">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2383#2391#0" expanded="true" />
-            <element signature="e#2944#2952#0" expanded="true" />
-            <element signature="e#3200#3208#0" expanded="true" />
-            <element signature="e#3410#3418#0" expanded="true" />
-            <element signature="e#3665#3673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/style/user_login.css">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/RandomImageStreamAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="70" selection-end="153" vertical-scroll-proportion="0.19823788">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/style/user_poolmodel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="83" selection-end="83" vertical-scroll-proportion="0.13215859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/src/user_poolmodel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.066079296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_postmodel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="2987" selection-end="3223" vertical-scroll-proportion="0.78417265">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/DBA/DBAforPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="26" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-8.727891">
+        <state line="15" column="13" selection-start="327" selection-end="327" vertical-scroll-proportion="0.2665198">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/user/user_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="37" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.4955947">
+        <state line="25" column="17" selection-start="862" selection-end="862" vertical-scroll-proportion="0.87616825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/image/random_image_stream.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="532" selection-end="532" vertical-scroll-proportion="0.6277533">
+        <state line="12" column="30" selection-start="0" selection-end="2223" vertical-scroll-proportion="0.41860464">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="662" selection-end="662" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserPoolAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="8" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1193#1204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="3706" selection-end="3706" vertical-scroll-proportion="0.0">
+        <state line="39" column="16" selection-start="1022" selection-end="1022" vertical-scroll-proportion="3.9583333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="913" selection-end="913" vertical-scroll-proportion="0.8259912">
+        <state line="22" column="55" selection-start="770" selection-end="782" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="24" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-13.541667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="56" selection-start="3818" selection-end="3818" vertical-scroll-proportion="0.16626506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="27" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="50" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="28" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.44315544">
           <folding />
         </state>
       </provider>

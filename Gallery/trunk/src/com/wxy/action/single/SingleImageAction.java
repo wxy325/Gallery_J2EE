@@ -30,7 +30,8 @@ public class SingleImageAction extends ActionSupport implements SessionAware
                              DescriptionService descriptionService,
                              CommentService commentService,
                              RemarkService remarkService,
-                             TagService tagService)
+                             TagService tagService,
+                             PoolService poolService)
     {
         super();
         this.setImageService(imageService);
@@ -40,6 +41,7 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         this.setCommentService(commentService);
         this.setRemarkService(remarkService);
         this.setTagService(tagService);
+        this.setPoolService(poolService);
     }
 
 
@@ -111,11 +113,26 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         this.descriptionEditable = descriptionEditable;
     }
 
+    //Pool
+    private List<Poolmodel> poolmodelList = new ArrayList<Poolmodel>();
+
+    public List<Poolmodel> getPoolmodelList() {
+        return poolmodelList;
+    }
+
+    public void setPoolmodelList(List<Poolmodel> poolmodelList) {
+        this.poolmodelList = poolmodelList;
+    }
+
     //Avg Remark
     private Boolean canAddRemark;
-    private Float averageRemark;
+    private Float averageRemark = null;
     private Integer userRemark = null;
     private Boolean hasUser;
+    public Boolean getCanAverage()
+    {
+        return this.getAverageRemark() != null && this.getAverageRemark() != 0.f;
+    }
 
     public Boolean getCanAddRemark() {
         return canAddRemark;
@@ -163,6 +180,15 @@ public class SingleImageAction extends ActionSupport implements SessionAware
     private CommentService commentService;
     private RemarkService remarkService;
     private TagService tagService;
+    private PoolService poolService;
+
+    public PoolService getPoolService() {
+        return poolService;
+    }
+
+    public void setPoolService(PoolService poolService) {
+        this.poolService = poolService;
+    }
 
     public ImageService getImageService() {
         return imageService;
@@ -329,6 +355,18 @@ public class SingleImageAction extends ActionSupport implements SessionAware
         {
             getTagList().add((Tagmodel)getTagService().get(tagId));
         }
+
+        if (currentUser != null)
+        {
+            List<Integer> poolIds = getPoolService().getUserPool(currentUser.getId());
+            for (Integer poolId : poolIds)
+            {
+                Poolmodel poolmodel = (Poolmodel) getPoolService().get(poolId);
+
+                this.getPoolmodelList().add(poolmodel);
+            }
+        }
+
         return SUCCESS;
     }
 }

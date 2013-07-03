@@ -111,11 +111,11 @@
                     <td>
                         平均得分:<br/>
                         <span id="avg-remark">
-                        <s:if test="averageRemark==null">
-                            目前尚未有人评分
+                        <s:if test="canAverage">
+                            <s:property value="averageRemark" />
                         </s:if>
                         <s:else>
-                            <s:property value="averageRemark" />
+                            目前尚未有人评分
                         </s:else>
                         </span>
                     </td>
@@ -141,6 +141,7 @@
         <div class="row">
             <div class="span9">
 
+
                 <div id="user-remark">
                 <s:if test="hasUser">
                     <s:if test="canAddRemark">
@@ -159,8 +160,33 @@
                 </s:if>
                 </div>
 
+                <s:if test="poolmodelList.size!=0">
+                <div>
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            添加至图片集
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <s:iterator value="poolmodelList" status="status">
+                                <li onclick="addPool(<s:property value="id" />)">
+                                    <a href="#">
+                                        <s:property value="name" />
+                                    </a>
+                                </li>
+                            </s:iterator>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
+
+
+
+        </s:if>
+
 
         <div class="row">
             <div class="span9">
@@ -244,6 +270,23 @@
 //                alert("success:" + fSuccess + "  avg:" + avg);
             });
 
+        }
+        function addPool(poolId)
+        {
+            $.post("/ajax/AjaxPoolAddImageAction",{"postId":<s:property value="imageId" />, "poolId":poolId  },
+            function(data)
+            {
+                <%--alert("poolId" + poolId + "postId" + <s:property value="imageId" />);--%>
+                var fSuccess = data.success;
+                if(fSuccess)
+                {
+                    alert("添加成功");
+                }
+                else
+                {
+                    alert("添加失败");
+                }
+            });
         }
     </script>
 

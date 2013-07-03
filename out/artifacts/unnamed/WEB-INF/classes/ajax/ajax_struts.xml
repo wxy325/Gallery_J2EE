@@ -24,7 +24,14 @@
             </result>
         </action>
 
+        <action name="AjaxUserAddPoolAction" class="SpringUserAddPoolAction">
+            <result name="success" type="json">
+            </result>
+        </action>
 
+        <action name="AjaxPoolAddImageAction" class="SpringPoolAddImage">
+            <result name="success" type="json"></result>
+        </action>
 
     </package>
 
