@@ -11,26 +11,37 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/pool" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/search" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/search" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/search" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/single" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/src" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/tag/src" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/src" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/stream" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/style" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/style" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/tag/style" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/style" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/tag" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddCommentAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/ImageAddRemarkAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/ImageRankStreamAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/OneTagAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/RandomImageStreamAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleEditDescriptionAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleEditDescriptionFinishAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/search/TitleSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/TopTagAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserNameCheckAction.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml" />
@@ -40,8 +51,11 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/style/image_upload.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/upload/src/image_upload.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag_error.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/style/random_image_stream.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/stream/image/random_image_stream.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/search/search_struts.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/style/single_edit_description.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/src/single_edit_description.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/single_edit_description.jsp" />
@@ -53,6 +67,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/single/single_image_error.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/single/single_struts.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/resources/tag/tag_struts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/search/title_search.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/user/style/user_poolmodel.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/user/src/user_poolmodel.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gallery/trunk/web/user/style/user_postmodel.css" />
@@ -382,7 +398,7 @@
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2_1.xsd" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1368236643295" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1368236643296" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2.xsd" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1368236643296" ignored="false" />
-    <file path="/user_head.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372798044448" ignored="false" />
+    <file path="/user_head.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372823337228" ignored="false" />
     <file path="/index.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371398492432" ignored="false" />
     <file path="/login_test.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1368241559297" ignored="false" />
     <file path="/user_login.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371633944050" ignored="false" />
@@ -397,7 +413,7 @@
     <file path="/IAccountService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370613347253" ignored="false" />
     <file path="/BaseDaoImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370010827058" ignored="false" />
     <file path="/user_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372800988954" ignored="false" />
-    <file path="/struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372761260600" ignored="false" />
+    <file path="/struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372822829448" ignored="false" />
     <file path="/user_register_success.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1369051531060" ignored="false" />
     <file path="/struts.properties" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1369061083798" ignored="false" />
     <file path="/user_register_fail.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371400203635" ignored="false" />
@@ -407,7 +423,7 @@
     <file path="/user_login_fail.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371399997030" ignored="false" />
     <file path="/user_login_success.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371399937570" ignored="false" />
     <file path="/ImageService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372796810343" ignored="false" />
-    <file path="/TagService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372672722567" ignored="false" />
+    <file path="/TagService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372810176580" ignored="false" />
     <file path="/AccountServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371473988334" ignored="false" />
     <file path="/ImageUploadAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372799165822" ignored="false" />
     <file path="/upload_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1369309545076" ignored="false" />
@@ -425,7 +441,7 @@
     <file path="/DBAforAll.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371490114823" ignored="false" />
     <file path="/Dummy.txt" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372738857715" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370190934539" ignored="false" />
-    <file path="/spring-config.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809294983" ignored="false" />
+    <file path="/spring-config.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372821746214" ignored="false" />
     <file path="/Remarkids.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1370608670203" ignored="false" />
     <file path="/CommentService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1371489636736" ignored="false" />
     <file path="/DescriptionService.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372672157213" ignored="false" />
@@ -463,7 +479,7 @@
     <file path="/ImageServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372796833101" ignored="false" />
     <file path="/PoolServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809668714" ignored="false" />
     <file path="/RemarkServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372673362130" ignored="false" />
-    <file path="/TagServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372790192247" ignored="false" />
+    <file path="/TagServiceImpl.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372810205520" ignored="false" />
     <file path="/image_upload.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372681556021" ignored="false" />
     <file path="/RandomImageStreamAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372690821843" ignored="false" />
     <file path="/stream_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372807718061" ignored="false" />
@@ -472,7 +488,7 @@
     <file path="/random_image_stream.js" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372694881466" ignored="false" />
     <file path="/SingleImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372805668971" ignored="false" />
     <file path="/single_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372777683831" ignored="false" />
-    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372806636492" ignored="false" />
+    <file path="/single_image.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372820790433" ignored="false" />
     <file path="/SingleEditDescriptionAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372778880144" ignored="false" />
     <file path="/single_edit_description.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372780253470" ignored="false" />
     <file path="/single_image_error.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372735297741" ignored="false" />
@@ -491,6 +507,14 @@
     <file path="/UserAddPoolAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372803420080" ignored="false" />
     <file path="/PoolAddImageAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372809769947" ignored="false" />
     <file path="/one_pool.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372807971991" ignored="false" />
+    <file path="/topTagAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372810341444" ignored="false" />
+    <file path="/OneTagAction.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372819610000" ignored="false" />
+    <file path="/tag_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372818943140" ignored="false" />
+    <file path="/one_tag_error.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372818925673" ignored="false" />
+    <file path="/one_tag.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372820643768" ignored="false" />
+    <file path="/TitleSearch.java" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372823361603" ignored="false" />
+    <file path="/search_struts.xml" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372822685791" ignored="false" />
+    <file path="/title_search.jsp" changelist="0a463641-909f-4e2c-9bf0-28df46a56e42" time="1372823435536" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -611,28 +635,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stream_struts.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml">
+      <file leaf-file-name="struts.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="55" selection-start="770" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="24" column="39" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_poolmodel.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
+      <file leaf-file-name="user_head.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_head.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="24" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-13.541667">
+            <state line="71" column="81" selection-start="2873" selection-end="2873" vertical-scroll-proportion="-5.42">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnePoolAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java">
+      <file leaf-file-name="TitleSearch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/search/TitleSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="27" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+            <state line="50" column="29" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -640,30 +664,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoolAddImageAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java">
+      <file leaf-file-name="title_search.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/search/title_search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="50" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoolServiceImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="28" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.44315544">
+            <state line="24" column="37" selection-start="712" selection-end="712" vertical-scroll-proportion="0.32374102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="one_pool.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp">
+      <file leaf-file-name="search_struts.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/search/search_struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="16" selection-start="1022" selection-end="1022" vertical-scroll-proportion="3.9583333">
+            <state line="7" column="45" selection-start="242" selection-end="249" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -679,22 +692,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/src/user_poolmodel.js" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/style/user_poolmodel.css" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/PoolService.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/user/UserPoolAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/resources/ajax/ajax_struts.xml" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/resources/user/user_struts.xml" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java" />
-        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java" />
         <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/TagService.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/TagServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/TopTagAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/topTagAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag_error.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/resources/tag/tag_struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/OneTagAction.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/resources/search/search_struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/resources/struts.xml" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/user/user_head.jsp" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/search/TitleSearch.java" />
+        <option value="$PROJECT_DIR$/Gallery/trunk/web/search/title_search.jsp" />
       </list>
     </option>
   </component>
@@ -872,6 +885,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="P11528220_J2EE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trunk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -886,327 +1029,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="single" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="single" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tag" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1224,43 +1051,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P11528220_J2EE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trunk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajax" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1770,123 +1561,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/RemarkService.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/TopTagAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="510" selection-end="510" vertical-scroll-proportion="0.5704846">
+        <state line="9" column="25" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/VO/Poolmodel.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/upload/upload_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="120" selection-end="120" vertical-scroll-proportion="0.26431718">
+        <state line="21" column="21" selection-start="207" selection-end="686" vertical-scroll-proportion="0.6938326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag_error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="283" selection-end="283" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/single/single_image.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="20" selection-start="5226" selection-end="5226" vertical-scroll-proportion="1.2757794">
+        <state line="121" column="26" selection-start="3708" selection-end="3708" vertical-scroll-proportion="4.945504">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/single/SingleImageAction.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/tag/OneTagAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="27" selection-start="4974" selection-end="4974" vertical-scroll-proportion="1.5253012">
-          <folding>
-            <element signature="e#3941#3952#0" expanded="true" />
-            <element signature="e#5185#5195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserNameCheckAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="54" selection-start="362" selection-end="383" vertical-scroll-proportion="0.33259913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/UserAddPoolAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="6" selection-start="950" selection-end="1171" vertical-scroll-proportion="0.7929515">
+        <state line="120" column="89" selection-start="2874" selection-end="2874" vertical-scroll-proportion="0.48019803">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/RandomImageStreamAction.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/tag/one_tag.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="327" selection-end="327" vertical-scroll-proportion="0.2665198">
+        <state line="28" column="63" selection-start="785" selection-end="785" vertical-scroll-proportion="0.32697546">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/user/user_struts.xml">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/struts.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="862" selection-end="862" vertical-scroll-proportion="0.87616825">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/image/random_image_stream.jsp">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/tag/tag_struts.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="0" selection-end="2223" vertical-scroll-proportion="0.41860464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/pool/one_pool.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="16" selection-start="1022" selection-end="1022" vertical-scroll-proportion="3.9583333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/stream/stream_struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="770" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_poolmodel.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="24" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-13.541667">
+        <state line="8" column="4" selection-start="209" selection-end="555" vertical-scroll-proportion="0.2970297">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/WEB-INF/classes/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="56" selection-start="3818" selection-end="3818" vertical-scroll-proportion="0.16626506">
+        <state line="130" column="56" selection-start="6465" selection-end="6465" vertical-scroll-proportion="0.88235295">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/pool/OnePoolAction.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/stream/image/ImageRankStreamAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="27" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+        <state line="111" column="24" selection-start="1095" selection-end="2594" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/ajax/PoolAddImageAction.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/stream/image/image_rank_stream.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="50" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
+        <state line="70" column="26" selection-start="0" selection-end="3320" vertical-scroll-proportion="-9.416667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/search/search_struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="45" selection-start="242" selection-end="249" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="39" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/user/user_head.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="81" selection-start="2873" selection-end="2873" vertical-scroll-proportion="-5.42">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/com/wxy/action/search/TitleSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="29" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gallery/trunk/src/org/shinshi/gallery/service/Impl/PoolServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/Gallery/trunk/web/search/title_search.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="28" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.44315544">
+        <state line="24" column="37" selection-start="712" selection-end="712" vertical-scroll-proportion="0.32374102">
           <folding />
         </state>
       </provider>

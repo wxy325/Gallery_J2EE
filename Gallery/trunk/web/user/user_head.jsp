@@ -54,11 +54,11 @@
                     <ul class="dropdown-menu">
                         <li><s:a href="%{#topHitURL}">Top Hit</s:a></li>
                         <li><s:a href="%{#topRateURL}">Top Rate</s:a></li>
-                        <li><a href="#">Top Tag</a></li>
+                        <%--<li><a href="#">Top Tag</a></li>--%>
                     </ul>
                 </li>
 
-                <li id="head_search"><a href="#">ËÑË÷</a></li>
+                <%--<li id="head_search"><a href="#">ËÑË÷</a></li>--%>
                 <li id="head_upload"><s:a href="%{#uploadURL}">ÉÏ´«</s:a></li>
             </ul>
 
@@ -67,8 +67,10 @@
 
             <ul class="nav pull-right">
                 <li>
-                    <form class="navbar-search pull-right">
-                        <input type="text" class="search-query" placeholder="Search">
+                    <form id="searchForm" class="navbar-search pull-right" action="/search/TitleSearchAction.action" method="GET">
+                        <input type="text" class="search-query" name="keyword" placeholder="Search" />
+                        <input type="submit" style="display: none">
+                        <%--<input type="text" name="currentPage" value="0" style="display: none" />--%>
                     </form>
                 </li>
                 <s:if test="#userModel == null">
@@ -114,4 +116,17 @@
         <%--</div>--%>
     </div>
 </div>
+
+<script type="text/javascript">
+    function submitSearchForm(event)
+    {
+//        alert("jej");
+        alert(event.keyCode);
+        if(event.keyCode == 13)
+        {
+            var form = document.getElementById("searchForm");
+            form.submit();
+        }
+    }
+</script>
 

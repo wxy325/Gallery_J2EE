@@ -21,5 +21,7 @@
     <include file="stream/stream_struts.xml" />
     <include file="single/single_struts.xml" />
     <include file="ajax/ajax_struts.xml" />
+    <include file="tag/tag_struts.xml" />
+    <include file="search/search_struts.xml" />
 
 </struts>

@@ -56,4 +56,10 @@ public class TagServiceImpl implements TagService<Tagmodel, Integer> {
     {
         return ParseHelper.tagModelToInteger(dao.searchTagByString(keyword));
     }
+
+    @Override
+    public Integer countTag(Integer id)
+    {
+        return this.dao.countTag(id);
+    }
 }

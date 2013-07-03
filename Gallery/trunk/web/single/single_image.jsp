@@ -129,7 +129,15 @@
                         </s:if>
                         <s:else>
                             <s:iterator value="tagList" status="status">
-                                <s:property value="name" /> <br />
+
+                                <s:url action="OneTagAction" namespace="/tag" var="tagURL">
+                                    <s:param name="tagId"><s:property value="id" /></s:param>
+                                    <s:param name="currentPage">0</s:param>
+                                </s:url>
+
+                                <s:a href="%{#tagURL}">
+                                    <s:property value="name" />
+                                </s:a> <br />
                             </s:iterator>
                         </s:else>
                     </td>

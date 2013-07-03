@@ -120,4 +120,15 @@
         <constructor-arg index="0" ref="PoolService" />
     </bean>
 
+    <!-- Tag -->
+    <bean id="SpringOneTagAction" class="com.wxy.action.tag.OneTagAction" scope="prototype">
+        <constructor-arg index="0" ref="TagService" />
+        <constructor-arg index="1" ref="ImageService" />
+    </bean>
+
+    <!-- Search -->
+    <bean id="SpringTitleSearchAction" class="com.wxy.action.search.TitleSearch" scope="prototype">
+        <constructor-arg index="0" ref="ImageService" />
+    </bean>
+
 </beans>
